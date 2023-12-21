@@ -578,7 +578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c26701f6b986b4aa83f63e76abab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isTimerLocked: 1
 --- !u!1 &607532271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,12 +1083,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementOfPool: {fileID: 4826966298996283870, guid: ed4434b5b956d924e8a2b97ae091c96c, type: 3}
-  _numberOfElements: 2000
+  _numberOfElements: 100
   _isActiveSampling: 1
   total: 0
   active: 0
   inactive: 0
-  _timeInterval: 0.46
+  _timeInterval: 0.15
   _activateInUpdate: 0
 --- !u!4 &1035562619
 Transform:
@@ -1203,9 +1202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b555d62e495bedb4399e4d265c2208b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timerTmp: {fileID: 635705545}
-  _timerStartBtn: {fileID: 1559122198}
-  _timerStopBtn: {fileID: 638270587}
 --- !u!1 &1559122196
 GameObject:
   m_ObjectHideFlags: 0
