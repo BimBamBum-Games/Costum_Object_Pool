@@ -66,7 +66,7 @@ public class ObjectPool<T> {
         else if (_isDynamic) {   
             //Queue elemani yetersizse yenisini olustur.
             youngFish = _blochTFactory();
-
+            total++;
         }
         _setEnabled(youngFish);
         active++;
