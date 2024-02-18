@@ -12,11 +12,11 @@ public class ObjectPoolManagerBase<T> : MonoBehaviour where T : Component {
 
     [Header("Ornekleme Sayisi - Number Of Instantiation")]
     [SerializeField] int _numberOfElements = 1;
-
     [SerializeField] bool _isActiveSampling = true;
 
     private ObjectPool<T> Pool;
 
+    [FieldLocker]
     public int total, active, inactive;
  
     protected virtual void Awake() {
