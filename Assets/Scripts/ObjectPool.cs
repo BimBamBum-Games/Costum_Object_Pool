@@ -58,8 +58,8 @@ public class ObjectPool<T> {
     }
 
     public T PickItUp() {   
-        //Kuyruktan yeni bir tane ceker ve onu siranin sonuna geri ekler. Default(T) class icin null deger dondurur.
-        T youngFish = default(T);
+        //Kuyruktan yeni bir tane ceker ve onu siranin sonuna geri ekler. Default(T) class icin null deger dondurur. Disaridan Null kontrolü yapilmasi gerekebilir.
+        T youngFish = default;
         if (_pool.Count > 0) {
             youngFish = _pool.Dequeue();
         }
